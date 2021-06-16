@@ -1,0 +1,160 @@
+* {padding: 0;margin: 0;border: 0;}
+*, *:before, *:after {box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherist;}
+input:-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body{
+  font-family: Arial;
+  font-size: 18px;
+  width: 100%;
+}
+
+.body{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form__wrapper{
+  width: 100%;
+}
+.title{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.item-title{
+  font-weight: 700;
+}
+.form__forms{
+  width: 100%;
+  margin-top: 50px;
+}
+.form__item{
+  display: flex;
+  width: 100%;
+  margin: 10px 0px;
+  .form__item-title{
+    width: 45%;
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+.form__input{
+  width: 200px;
+  padding: 3px;
+  border: 1px solid rgb(167, 167, 167);
+  box-shadow: inset 1px 1px 1px rgba(167, 167, 167, 0.5);
+}
+.form__inputs{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  label{
+    margin: 5px 0px;
+  }
+}
+.form__button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  button{
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 20px;
+    background: rgb(200, 200, 200);
+    color: white;
+    transition-duration: 200ms;
+    &:hover{
+      background: rgba(200, 200, 200, 0.8);
+    }
+  }
+}
+
+//page
+.page__wrapper{
+  width: 500px;
+  border: 2px solid rgb(107, 109, 108);
+  border-radius: 7px;
+  background: rgb(216, 217, 221);
+  padding: 20px;
+}
+.page__info{
+  margin-top: 30px;
+}
+.page__item-title{
+  margin-bottom: 5px;
+}
+.page-info__item{
+  padding-left: 20px;
+}
+.page__item{
+  margin: 15px 0px;
+}
+.page__error{
+  border: 1px solid rgb(180, 0, 0);
+}
+.form__error-message{
+  font-size: 10px;
+  color: rgb(180, 0, 0);
+  margin: 6px 0px 0px 5px;
+}
+.page__lodgings{
+  div{
+    margin: 5px 0px;
+  }
+}
+
+@media(max-width: 500px){
+  .body{
+    margin-top: 20px;
+  }
+  .form__forms{
+    margin-top: 30px;
+  }
+  .form__item{
+    flex-direction: column;
+  }
+  .form__item-title{
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+  .form__item{
+    align-items: center;
+  }
+  .form__inputs{
+    width: 250px;
+    margin-left: 50px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .page__wrapper{
+    margin: 0px 20px;
+  }
+}
